@@ -1,72 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tittle</title>
-    <link rel="stylesheet" href="./src/output.css" />
-    <!-- font awsome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header class="pt-2 ">
-      <nav class="container flex items-center justify-around">
-        <div>
-          <img src="../images/Askmeidentity 2.png" alt="Logo" class="pl-0.5" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tittle</title>
+  <link rel="stylesheet" href="./src/output.css" />
+  <!-- font awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="m-0 p-0 box-border">
+  <!-- header section -->
+  <header>
+    <div class="mx-auto">
+      <nav class="flex items-center justify-between bg-white max-sm:flex-col">
+        <div class="flex">
+          <a href="#" class="mt-2">
+            <img class="h-16 w-auto border-0" src="./images/Askmeidentity 2.png" alt="logo" />
+          </a>
         </div>
-        <div class="flex flex-wrap font-righteous gap-9 text-2xl">
-          <a href="#index.html">Home</a>
-          <a href="">About</a>
-          <a href="">Courses</a>
-          <a href="">Contact</a>
+        <!-- nav bar -->
+        <div class="flex gap-6 font-righteous max-sm:pb-4">
+          <a href="#index.html" class="hover:text-gray-500">Home</a>
+          <a href="" class="hover:text-gray-500">About</a>
+          <a href="" class="hover:text-gray-500">Courses</a>
+          <a href="" class="hover:text-gray-500">Contact</a>
         </div>
-        <div class="flex flex-wrap gap-5">
-          <button class="hover:cursor-pointer">
-            <i class="fa-solid fa-cart-shopping text-3xl"></i>
-          </button>
-          <button class="hover:cursor-pointer">
-            <i class="fa-solid fa-circle-user text-3xl"></i>
-          </button>
-          <button class="hover:cursor-pointer">
-            <i class="fa-solid fa-magnifying-glass text-3xl"></i>
-          </button>
+
+        <!-- icons -->
+
+        <div class="flex gap-3 relative max-sm:pb-2 z-0">
+          <a href="">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="absolute px-2 rounded-2xl bg-green-600 -top-3 left-2">0</span>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-circle-user"></i>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-magnifying-glass"> </i>
+          </a>
         </div>
-        <div class="text-2xl">
-          <button
-            type="submit"
-            class="color pr-2.5 font-Saira underline hover:cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
-          >
-            Login
-          </button>
-          <button
-            type="submit"
-            class="font-Saira text-white w-24 p-2.5 rounded-md bg-linear-to-r from-blue-800 to-purple-500 hover:cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
-          >
-            Signup
-          </button>
+
+        <!-- buttons -->
+
+        <div class="flex gap-2">
+          <div>
+            <a href="#"
+              class="underline hover:bg-linear-to-r from-violet-700 via-indigo-700 to-blue-700 rounded-md p-2 font-saira hover:text-white">Login</a>
+          </div>
+          <div>
+            <a href="#"
+              class="hover:bg-linear-to-r  from-violet-700 via-indigo-700 to-blue-700 rounded-md p-2 hover:text-white font-saira">Signup</a>
+          </div>
         </div>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <div
-        class="flex flex-col w-lvw pl-16 gap-5 bg-linear-to-r from-blue-800 to-purple-500 h-lvh"
-      >
-        <h3 class="font-righteous pt-12 text-white">
-          Successful coaches are visionaries
-        </h3>
-        <h1 class="font-righteous text-6xl text-white">
-          Good <span class="text-blue-500">coaching</span> is <br />
-          good teaching & <br />
-          nothing else.
+  <!-- hero section -->
+
+  <section class="max-sm:overflow-x-hidden">
+    <div
+      class="flex justify-between pt-20 ps-7 lg:px-14 bg-linear-to-r from-violet-700 via-indigo-700 to-blue-700 text-white  font-righteous">
+      <div class="relative pb-32">
+        <p class="uppercase text-xs tracking-widest text-gray-200 max-sm:text-[8px]">Successful coaches are visionaries
+        </p>
+        <h1 class="text-6xl py-4 mb-4 leading-snug w-lg  max-sm:text-2xl max-sm:w-60">Good
+          <span class="text-blue-500">coaching</span> is good teaching & nothing else.
         </h1>
+
+        <!-- buttons -->
+
+        <div class="mb-10">
+          <button type="button"
+            class="relative inline-flex justify-center items-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium rounded-lg border hover:bg-linear-to-r from-indigo-200 to-violet-400 hover:border-0 max-sm:text-2xl">
+            <span class="relative text-xs px-5 py-2.5  max-sm:w-30 max-sm:p-2">View Course</span>
+          </button>
+          <button
+            class="relative inline-flex justify-center items-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium rounded-lg border hover:bg-linear-to-r from-indigo-200 to-violet-400 hover:border-0 max-sm:text-2xl">
+            <span class="relative text-xs px-5 py-2.5 max-sm:w-38 max-sm:p-2">Get Free Consultation</span>
+          </button>
+        </div>
+
+        <!-- input button -->
+        <div class="mt-12">
+          <form action="">
+            <div class="relative text-center">
+              <input type="text" name="" id="" placeholder="what do you want to learn today?"
+                class="w-xl border p-4 rounded-md bg-white text-black max-sm:w-xs max-sm:text-xs max-sm:pl-0">
+              <button
+                class="border px-4 p-2 rounded-lg absolute top-2.5 right-5 bg-linear-to-r from-violet-700 via-indigo-700 to-blue-700 hover:text-gray-300 max-sm:w-16 max-sm:text-xs max-sm:px-0 max-sm:absolute max-sm:right-10 "><i
+                  class="fa-solid fa-magnifying-glass"></i> Search</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- arch -->
+
+        <div class="relative hidden lg:block z-0">
+          <span class="border border-gray-300 p-32 absolute rounded-t-full -top-32 -right-72"></span>
+          <span
+            class="border-2 px-28 py-32 border-dashed border-gray-300 p-32 absolute rounded-t-full -top-27 -right-68"></span>
+          <span class="border px-24 py-32 border-gray-300 p-32 absolute rounded-t-full -top-22 -right-64"></span>
+        </div>
       </div>
-    </main>
-  </body>
+
+      <!-- qoute -->
+
+      <div class="hidden lg:flex lg:justify-between">
+        <img src="./images/Group 1000014970.png" alt="" class="relative top-4 right-96 h-20 pr-2">
+        <div class="relative top-4 right-96 w-48 text-xs">
+          <h4 class="pb-2 ">Shyam</h4>
+          <p class="pb-2">In a coaching role, you ask the questions and rely more on your
+            staff, who become the experts, to provide the information.</p>
+          <span class="text-blue-500">4.9</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section>
+    <div
+      class="flex justify-between bg-linear-to-t from-purple-800 to-blue-700 relative top-0 shadow-md p-8 items-center  z-50 max-sm:flex max-sm:flex-col max-sm:gap-6 ">
+      <img src="./images/Link ⏵ brand6.png (1).png" alt="" class="w-24  max-sm:w-18" />
+      <img src="./images/Link ⏵ brand1.png.png" alt="" class="w-24 max-sm:w-18" />
+      <img src="./images/Link ⏵ brand6.png (1).png" alt="" class="w-24 max-sm:w-18" />
+      <img src="./images/Link ⏵ brand3.png.png" alt="" class="w-24 max-sm:w-18" />
+      <img src="./images/Link ⏵ brand5.png.png" alt="" class="w-24 max-sm:w-18" />
+      <img src="./images/Link ⏵ brand6.png (1).png" alt="" class="w-24 max-sm:w-18" />
+    </div>
+  </section>
+
+  <section class="mt-10">
+    
+      <div class="flex items-center justify-center p-5 font-righteous ">
+        <img src="./images/Ellipse 118.png" alt="" class="w-16 relative -top-2 mr-20">
+        <div class="flex flex-col text-center text-xl w-3xl gap-1.5 h-20">
+          <h1 class="font-bold text-3xl">Featured <span class="text-blue-400">Course</span></h1>
+          <span class="uppercase tracking-widest text-gray-400">The feature courses are we invented our teaching
+            part</span>
+        </div>
+      </div>
+
+      <!-- cards -->
+      <div class="mt-20 font-righteous flex items-center justify-center gap-8 flex-wrap cursor-pointer text-gray-600">
+        <div class="border-0 w-xs rounded-lg h-84 shadow-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">
+          <img src="./images/3d-map-pins-gps-navigator-pin-checking-poins-3d-render-illustration 1.png" alt="" class="w-4xl rounded-t-sm">
+          <div class="px-4">
+          <div class="bg-white flex justify-between text-gray-500 text-xs pt-5 ">
+            <span>
+              1,957 Students
+            </span>
+            <span>
+              01h 59m
+            </span>
+          </div>
+          <div class="pb-4 pt-2">
+            <h2 class="w-xs uppercase">
+              Motion Graphics: Create a Nice
+              Typography Animation
+            </h2>
+          </div>
+          <div class="flex justify-between  pb-4">
+            <span>
+              Rs.499
+            </span>
+            <span class="text-xs">
+              <i class="fa-solid fa-cart-shopping" class="w-10"></i>
+            </span>
+          </div>
+          </div>
+        </div>
+
+        <div class="border-0 w-xs rounded-lg h-84 shadow-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 gap-8">
+          <img src="./images/3d-jigsaw-puzzle-pieces-pink-background-problem-solving-business-concept-3d-render-illustration 1.png" alt="" class="w-4xl rounded-t-sm">
+          <div class="px-4">
+          <div class="bg-white flex justify-between text-gray-500 text-xs pt-5 ">
+            <span>
+              9,575 Students
+            </span>
+            <span>
+              01h 59m
+            </span>
+          </div>
+          <div class="pb-4 pt-2">
+            <h2 class="w-xs uppercase">
+              Advance PHP knowledge with JS to
+              make smart web
+            </h2>
+          </div>
+          <div class="flex justify-between  pb-4">
+            <span>
+              Rs.499
+            </span>
+            <span class="text-xs">
+              <i class="fa-solid fa-cart-shopping" class="w-10"></i>
+            </span>
+          </div>
+          </div>
+        </div>
+
+        <div class="border-0 w-xs rounded-lg h-84 shadow-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 gap-8">
+          <img src="./images/rocket-launch-laptop-flying-rocket-icon-business-startup-project-concept 1.png" alt="" class="w-4xl rounded-t-sm">
+          <div class="px-4">
+          <div class="bg-white flex justify-between text-gray-500 text-xs pt-5 ">
+            <span>
+              2957 Students
+            </span>
+            <span>
+              02h 49m
+            </span>
+          </div>
+          <div class="pb-4 pt-2">
+            <h2 class="w-xs uppercase">
+              Education Software and PHP and JS
+              System Script
+            </h2>
+          </div>
+          <div class="flex justify-between  pb-4">
+            <span>
+              Rs.499
+            </span>
+            <span class="text-xs">
+              <i class="fa-solid fa-cart-shopping" class="w-10"></i>
+            </span>
+          </div>
+          </div>
+        </div>
+
+        <div class="border-0 w-xs rounded-lg h-84 shadow-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 gap-8">
+          <img src="./images/red-up-arrow-coin-stacks-pink-background-financial-success-growth-concept-3d-render-illustration 1.png" alt="" class="w-4xl rounded-t-sm">
+          <div class="px-4">
+          <div class="bg-white flex justify-between text-gray-500 text-xs pt-5 ">
+            <span>
+              5,457 Students
+            </span>
+            <span>
+              01h 49m
+            </span>
+          </div>
+          <div class="pb-4 pt-2">
+            <h2 class="w-xs uppercase">
+              The Complete Financial Analyst
+              Training & Investing
+            </h2>
+          </div>
+          <div class="flex justify-between  pb-4">
+            <span>
+              Rs.499
+            </span>
+            <span class="text-xs">
+              <i class="fa-solid fa-cart-shopping" class="w-10"></i>
+            </span>
+          </div>
+          </div>
+        </div>
+
+        <div class="border-0 w-xs rounded-lg h-84 shadow-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 gap-8">
+          <img src="./images/travel-concept-3d-illustration-airplane-flying-map-pin 1.png" alt="" class="w-4xl rounded-t-sm">
+          <div class="px-4">
+          <div class="bg-white flex justify-between text-gray-500 text-xs pt-5 ">
+            <span>
+              595 Students
+            </span>
+            <span>
+              01h 49m
+            </span>
+          </div>
+          <div class="pb-4 pt-2">
+            <h2 class="w-xs uppercase">
+              Marketing 2023: Complete Guide To
+              Instagram Growth
+            </h2>
+          </div>
+          <div class="flex justify-between  pb-4">
+            <span>
+              Rs.499
+            </span>
+            <span class="text-xs">
+              <i class="fa-solid fa-cart-shopping" class="w-10"></i>
+            </span>
+          </div>
+          </div>
+        </div>
+
+        <div class="border-0 w-xs rounded-lg h-84 shadow-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 gap-8">
+          <img src="./images/online-banking-icon-money-saving-bank-bundles-money-coins-floating-around-purple-background 1.png" alt="" class="w-4xl rounded-t-sm">
+          <div class="px-4">
+          <div class="bg-white flex justify-between text-gray-500 text-xs pt-5 ">
+            <span>
+              458 Students
+            </span>
+            <span>
+              03h 00m
+            </span>
+          </div>
+          <div class="pb-4 pt-2">
+            <h2 class="w-xs uppercase">
+              Learn 3D Modelling and Design
+              for Beginners
+            </h2>
+          </div>
+          <div class="flex justify-between  pb-4">
+            <span>
+              Rs.499
+            </span>
+            <span class="text-xs">
+              <i class="fa-solid fa-cart-shopping" class="w-10"></i>
+            </span>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center pt-20 font-righteous text-center pb-20 ">
+        <button type="button" class="bg-linear-to-r from-blue-500 via-purple-500 to-indigo-700 rounded-md border px-4 py-2 hover:bg-linear-to-r from-cyan-600 to-blue-600">Explore Courses</button>
+      </div>
+  </section>
+</body>
+
 </html>
